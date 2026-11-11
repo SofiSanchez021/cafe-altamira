@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catas de café · Café Altamira</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html">
+      <img src="img/grano.svg" alt="" width="28" height="28">
+      Café Altamira
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="eventos.html" aria-current="page">Catas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Catas de café</h1>
+    <p>Aprende a distinguir aromas, acidez y cuerpo junto a nuestros caficultores en la finca.</p>
+
+    <section id="catas" class="seccion" aria-labelledby="catas-titulo">
+      <h2 id="catas-titulo">Próximas catas</h2>
+
+      <article>
+        <h3>Cata de Geisha de Altura</h3>
+        <p>Sábado 5 de diciembre · 10:00 a. m. · Finca Altamira, Santuario.</p>
+        <p>Notas de jazmín y durazno, con guía del tostador.</p>
+      </article>
+
+      <article>
+        <h3>Cata de procesos: lavado y honey</h3>
+        <p>Sábado 12 de diciembre · 10:00 a. m. · Finca Altamira, Santuario.</p>
+        <p>Compara cómo cambia el sabor según el beneficio del grano.</p>
+      </article>
+
+      <article>
+        <h3>Cata de cafés de Risaralda</h3>
+        <p>Sábado 19 de diciembre · 10:00 a. m. · Finca Altamira, Santuario.</p>
+        <p>Un recorrido por tres orígenes del departamento.</p>
+      </article>
+    </section>
+
+    <section id="inscripcion" class="seccion" aria-labelledby="inscripcion-titulo">
+      <h2 id="inscripcion-titulo">Inscríbete a una cata</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Tus datos</legend>
+
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+        </fieldset>
+
+        <fieldset>
+          <legend>¿A qué cata quieres asistir?</legend>
+
+          <div>
+            <input type="radio" id="cata-geisha" name="cata" value="geisha" required>
+            <label for="cata-geisha">Cata de Geisha de Altura (5 de diciembre)</label>
+          </div>
+          <div>
+            <input type="radio" id="cata-procesos" name="cata" value="procesos">
+            <label for="cata-procesos">Cata de procesos (12 de diciembre)</label>
+          </div>
+          <div>
+            <input type="radio" id="cata-risaralda" name="cata" value="risaralda">
+            <label for="cata-risaralda">Cata de cafés de Risaralda (19 de diciembre)</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalles de la inscripción</legend>
+
+          <label for="personas">Número de personas</label>
+          <select id="personas" name="personas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <div>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto recibir información sobre la cata</label>
+          </div>
+        </fieldset>
+
+        <button class="boton" type="submit">Inscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <address>
+      Carrera 7 # 12-45, Santuario, Risaralda<br>
+      Tel. 606 368 0000
+    </address>
+  </footer>
+</body>
+</html>
